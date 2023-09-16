@@ -1,0 +1,8 @@
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right, hsl(189, 73%, 70%), hsl(156, 59%, 56%));
+}

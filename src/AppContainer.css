@@ -1,0 +1,9 @@
+.appContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three equal-width columns */
+  grid-auto-flow: row;
+  gap: 32px;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 10px 0px;
+}

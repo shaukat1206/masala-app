@@ -1,0 +1,7 @@
+.primaryButton {
+  width: 100%;
+  padding: 20px;
+  background-color: chocolate;
+  border-radius: 16px;
+  border: none;
+}
