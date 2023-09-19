@@ -4,6 +4,7 @@ import AppContainer from "./AppContainer";
 import AppHeader from "./AppHeader";
 import CartContainer from "./CartContainer";
 import { useState } from "react";
+import Login from "./Login";
 
 const products = [
   {
@@ -48,6 +49,20 @@ const products = [
     productImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zQFhHPK1liNT8qAoV8Ki1UqLz6BSZjjtYA&usqp=CAU",
   },
+  {
+    _id: 7,
+    name: "Masala-7",
+    price: 150,
+    productImage:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zQFhHPK1liNT8qAoV8Ki1UqLz6BSZjjtYA&usqp=CAU",
+  },
+  {
+    _id: 8,
+    name: "Masala-8",
+    price: 560,
+    productImage:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOO-39lPkVGBNWgmHPvB4TMWn69m2xPXUig&usqp=CAU",
+  },
 ];
 
 function App() {
@@ -86,6 +101,14 @@ function App() {
                 <AppHeader cartItems={cartItems} />
                 <CartContainer products={products} cartItems={cartItems} />
               </>
+            ),
+          },
+          {
+            path: "/login",
+            element: (
+              <div className="Login_page">
+                <Login />
+              </div>
             ),
           },
         ])}

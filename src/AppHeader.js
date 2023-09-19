@@ -31,7 +31,14 @@ function AppHeader({ cartItems = [] }) {
       </div>
 
       <div>
-        <PrimaryButton text={"Login"} />
+        <button
+          className="Login-button"
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          <PrimaryButton text={"Login"} />
+        </button>
       </div>
     </div>
   );

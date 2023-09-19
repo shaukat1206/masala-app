@@ -1,4 +1,5 @@
 import React from "react";
+import "./CartContainer.css";
 
 function CartContainer({ products = [], cartItems = [] }) {
   const cartMapsItems = cartItems
@@ -13,8 +14,19 @@ function CartContainer({ products = [], cartItems = [] }) {
       {cartMapsItems.map((product, index) => {
         return (
           <div key={index}>
-            <div>{product.name}</div>
-            <div>{product.price}</div>
+            <div className="Cart_img">
+              <img
+                className="CartContainer_img"
+                src={product.productImage}
+                alt=""
+              />
+            </div>
+            <div className="cart__details">
+              <div>{product.name}</div>
+              <div>{product.price}</div>
+            </div>
+
+            <button className="cartCanncel_button">Canncel</button>
           </div>
         );
       })}

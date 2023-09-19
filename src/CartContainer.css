@@ -1,0 +1,16 @@
+.CartContainer_img {
+  padding: 10px 30px;
+}
+
+.cart__details {
+  padding: 5px 150px;
+}
+.cartCanncel_button {
+  margin: 2px 130px;
+  width: 90px;
+  height: 40px;
+  font-size: larger;
+  border-radius: 16px;
+  background-color: rgb(207, 173, 98);
+  border: 2px solid rgb(152, 140, 137);
+}
