@@ -15,7 +15,6 @@ function CartContainer({ products = [], cartItems = [] }) {
           <div key={index}>
             <div>{product.name}</div>
             <div>{product.price}</div>
-            <div>{product.button}</div>
           </div>
         );
       })}
